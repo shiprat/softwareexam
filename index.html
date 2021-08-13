@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>New Contact</title>
+</head>
+
+<body>
+  <h2>Reserving Application</h2>
+  <div class="progress" id="progressBar">
+    <h4 class="pointer active" id="daysPointer">Select Days</h4><h4 class="pointer" id="registerPointer">Register</h4><h4 class="pointer" id="confirmPointer">Confirm</h4>
+  </div>
+
+  <div class="container active" id="stepOne">
+    <form id="daysForm">
+      <input id="eventDay1" type="checkbox" name="day1" />
+      <label for="eventDay1"> Day 1 ($350 / person)</label>
+
+      <input id="eventDay2" type="checkbox" name="day2" />
+      <label for="eventDay2"> Day 2 ($450 / person)</label>
+
+      <p>$50 off for couple days select.</p>
+      <hr>
+      <div class="cost">
+        <p>Cost per person: </p>
+        <p id="personCost">$0</p>
+      </div>
+      
+
+      <input id="next" type="submit" value="Next" />
+    </form>
+  </div>
+
+  <div class="container" id="stepTwo">
+    <form id="registerForm">
+      <label for="contactname">Name:</label><input id="contactname" type="text" name="firstname"
+        placeholder="First Name" required />
+      <input id="contactname" type="text" name="lastname" placeholder="Last Name" required />
+
+      <label for="address">Address:</label><input id="address" type="text" name="address" placeholder="Address" required />
+
+      <label for="city">City:</label><input id="city" type="text" name="city" placeholder="City" required />
+
+      <label for="provice">Province:</label><input id="provice" type="text" name="province" placeholder="Province" required />
+
+      <label for="postalcode">Postal Code:</label><input id="postalcode" type="text" name="postalcode"
+        placeholder="example: A1B 2C3" required />
+      <p class="error" id="postalcodeerror">Please enter valid Postal Code.</p>
+
+      <label for="phonenumber">Phone Number:</label><input id="phonenumber" type="tel" name="phonenumber"
+        placeholder="examples: (123)456-7890 or 123-456-7890" required />
+      <p class="error" id="phonenumbererror">Please enter valid Phone Number.</p>
+
+      <label for="email">Email:</label><input id="email" type="email" name="email" placeholder="Email" required />
+
+      <label for="number">Number:</label><input id="number" type="number" name="number"
+        placeholder="%10 off if you are more than 4 person" required />
+
+      <div class="buttonContainer">
+        <input id="backToDays" type="button" name="back" value="Back" />
+        <input id="reset" type="reset" name="reset" value="Reset" />
+        <input id="submit" type="submit" name="submit" value="Submit" />
+      </div>
+    </form>
+  </div>
+
+  <div class="container" id="stepThree">
+    <div id="confirmationView">
+      <p>Mortiza Nourani</p>
+      <p>Address</p>
+      <p>5 person</p>
+      <hr>
+      <p>Cost per person: $450</p>
+      <p>Total Cost: $900</p>
+    </div>
+    <div class="buttonContainer">
+      <button id="backToRegister">Back</button>
+      <button id="cancel">Cancel</button>
+      <button id="confirm">Confirm</button>
+    </div>
+  </div>
+  <footer></footer>
+  <script src="scripts/reserve.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12pt;
+  text-align: center;
+}
+
+body * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.pointer {
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  margin: 0;
+  border-radius: 3px 3px 0 0;
+  border: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: white;
+  font-weight: bold;
+}
+
+.pointer.active {
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.container {
+  width: 600px;
+  padding: 25px 50px 40px;
+  margin: 0px -300px;
+  position: relative;
+  border: 1px solid gray;
+  border-top: none;
+  border-radius: 0 0 3px 3px;
+  background-color: #f3f3f3;
+  text-align: left;
+  top: 0px;
+  left: 50%;
+  display: none;
+}
+
+.container.active {
+  display: block;
+}
+
+
+
+form#daysForm * {
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+form#daysForm label {
+  display: inline-block;
+  width: 460px;
+  margin: 15px 5px 5px;
+  font-size: 10.5pt;
+}
+
+form#daysForm input {
+  width: 15px;
+  padding: 5px 7px;
+  display: inline-block;
+}
+
+form#daysForm p {
+  margin: 15px 0;
+}
+
+form#daysForm div.cost {
+  display: flex;
+  justify-content: space-between;
+}
+
+form#daysForm input#next {
+  margin-top: 15px;
+  width: 125px;
+  margin-left: 375px;
+}
+
+
+
+
+
+form#registerForm * {
+  margin: 0;
+  width: 398px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+form#registerForm label {
+  display: inline-block;
+  width: 100px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 10.5pt;
+}
+
+form#registerForm input {
+  padding: 5px 7px;
+  display: inline-block;
+}
+
+form#registerForm input#contactname {
+  width: 197px;
+}
+
+form#registerForm p.error {
+  margin: 4px 0 0 110px;
+  padding: 0;
+  color: red;
+  font-size: 9pt;
+  display: none;
+}
+
+form#registerForm div.buttonContainer {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+form#registerForm input#submit,
+form#registerForm input#reset,
+form#registerForm input#backToDays {
+  width: 125px;
+}
+
+
+
+div#stepThree * {
+  margin: 0;
+  width: 500px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+div#stepThree div#confirmationView p {
+  margin: 5px auto;
+}
+
+div#stepThree div#confirmationView p b {
+  display: inline-block;
+  width: 150px;
+}
+
+div#stepThree div.buttonContainer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div#stepThree button {
+  width: 125px;
+  padding: 5px 7px;
+}
+
+
+
+footer {
+  display: block;
+  height: 50px;
+}
